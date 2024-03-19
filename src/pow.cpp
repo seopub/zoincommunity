@@ -58,7 +58,11 @@ unsigned int GetNextWorkRequired(const CBlockIndex *pindexLast, const CBlockHead
             bnProofOfWorkLimit = CBigNum(~arith_uint256(0) >> 8);
             //return bnProofOfWorkLimit.GetCompact();
         }
-
+        CBigNum bNew;
+        bNew.SetCompact(pindexLast->nBits);
+        bNew = bNew + 1;
+        return bnNew.GetCompact();
+    
         // Only change once per interval
         if ((pindexLast->nHeight+1) % nRetargetInterval != 0){
             return pindexLast->nBits;
