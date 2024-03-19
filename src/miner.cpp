@@ -139,23 +139,11 @@ void BlockAssembler::resetBlock()
     blockFinished = false;
 }
 
-const long long unix_timestmap_now()
-{
-   ptime time_t_epoch(date(1970, 1, 1));
-   ptime now = microsec_clock::universal_time();
-   time_duration diff = now - time_t_epoch;
-   return  diff.total_milliseconds();;
-}
-static long prev_block_time = 0;
+
 
 CBlockTemplate* BlockAssembler::CreateNewBlock(const CScript& scriptPubKeyIn, int64_t* pFees)
 {
-     long now =  unix_timestmap_now();
-        if(prev_block_time!=0 && now - prev_block_time < 120*1000)
-        {
-                throw std::runtime_error(strprintf("too fast block template request\n"));
-        }
-        prev_block_time = now;
+
     
     // Create new block
     const Consensus::Params &params = Params().GetConsensus();
