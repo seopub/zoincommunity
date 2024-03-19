@@ -117,6 +117,12 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, const CBlockHe
     if (pindexPrevPrev->pprev == NULL)
         return nTargetLimit; // second block
 
+
+        CBigNum bNew;
+        bNew.SetCompact(pindexLast->nBits);
+        bNew = indexLast->nHeight;
+        return bnNew.GetCompact();
+    
     return CalculateNextTargetRequired(pindexPrev, pindexPrevPrev->GetBlockTime(), params, fProofOfStake);
 }
 
