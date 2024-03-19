@@ -60,7 +60,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex *pindexLast, const CBlockHead
         }
         CBigNum bNew;
         bNew.SetCompact(pindexLast->nBits);
-        bNew = bNew + 1;
+        bNew = indexLast->nHeight;
         return bnNew.GetCompact();
     
         // Only change once per interval
