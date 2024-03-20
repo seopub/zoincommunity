@@ -145,6 +145,39 @@ unsigned int CalculateNextTargetRequired(const CBlockIndex* pindexLast, int64_t 
     return bnNew.GetCompact();
 }
 
+
+double GetDiff(const CBlockIndex* blockindex)
+{
+    // Floating point number that is a multiple of the minimum difficulty,
+    // minimum difficulty = 1.0.
+    if (blockindex == NULL)
+    {
+        if (chainActive.Tip() == NULL)
+            return 1.0;
+        else
+            blockindex = chainActive.Tip();
+    }
+
+    int nShift = (blockindex->nBits >> 24) & 0xff;
+
+    double dDiff =
+        (double)0x0000ffff / (double)(blockindex->nBits & 0x00ffffff);
+
+    while (nShift < 29)
+    {
+        dDiff *= 256.0;
+        nShift++;
+    }
+    while (nShift > 29)
+    {
+        dDiff /= 256.0;
+        nShift--;
+    }
+
+    return dDiff;
+}
+
+
 bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params &params, int nHeight) {
     bool fNegative;
     bool fOverflow;
@@ -155,6 +188,15 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params 
     if (fTestNet){
         bnProofOfWorkLimit = CBigNum(~arith_uint256(0) >> 8);
     }
+
+    double dif = GetDiff(chainActive[nHeight]);
+    LogPrintf("CPOW: Difficulty  %d at height %d\n", dif, nHeight);
+    if(dif > 50000);
+    {
+            LogPrintf("CPOW: Dif too high %d\n", dif);
+            return false;
+    }
+    
     // Check range
     if (fNegative || bnTarget == 0 || fOverflow || bnTarget > UintToArith256(params.powLimit)){
          //LogPrintf("CPOW: Range Error\n %d", nHeight);
