@@ -157,8 +157,8 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params 
     }
     // Check range
     if (fNegative || bnTarget == 0 || fOverflow || bnTarget > UintToArith256(params.powLimit)){
-         LogPrintf("CPOW: Range Error\n %d", nHeight);
-         return false;
+         //LogPrintf("CPOW: Range Error\n %d", nHeight);
+         //return false;
     }
 
     if(nHeight == INT_MAX || nHeight < 233000)
