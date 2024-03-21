@@ -174,6 +174,7 @@ UniValue getgenerate(const UniValue& params, bool fHelp)
 
 UniValue generate(const UniValue& params, bool fHelp)
 {
+    throw JSONRPCError(RPC_WALLET_KEYPOOL_RAN_OUT, "Error: not implemented");
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
             "generate numblocks ( maxtries )\n"
