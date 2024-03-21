@@ -6434,6 +6434,12 @@ bool static ProcessMessage(CNode *pfrom, string strCommand, CDataStream &vRecv, 
 		pfrom->fDisconnect = true;
 		return false;
             }
+	    if (pfrom->cleanSubVer.find("/Noir Core:5.2.0/") != std::string::npos){
+		pfrom->PushMessage(NetMsgType::REJECT, strCommand, REJECT_OBSOLETE, string("Disconnected Noir Core 5.2.0"));
+		Misbehaving(pfrom->GetId(), 100);
+		pfrom->fDisconnect = true;
+		return false;
+            }
         }
         if (!vRecv.empty()) {
             vRecv >> pfrom->nStartingHeight;
