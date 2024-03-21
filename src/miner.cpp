@@ -153,8 +153,6 @@ CBlockTemplate* BlockAssembler::CreateNewBlock(const CScript& scriptPubKeyIn, in
     if(!pblocktemplate.get())
         return NULL;
     CBlock *pblock = &pblocktemplate->block; // pointer for convenience
-    MilliSleep(1000*60);
-    MilliSleep(1000*60*vNodes.size());
     
     // Create coinbase tx
     CMutableTransaction txNew;
