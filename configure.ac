@@ -14,10 +14,10 @@ AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=noird
-BITCOIN_GUI_NAME=noir-qt
-BITCOIN_CLI_NAME=noir-cli
-BITCOIN_TX_NAME=noir-tx
+BITCOIN_DAEMON_NAME=zoind
+BITCOIN_GUI_NAME=zoin-qt
+BITCOIN_CLI_NAME=zoin-cli
+BITCOIN_TX_NAME=zoin-tx
 
 AC_CANONICAL_HOST
 
