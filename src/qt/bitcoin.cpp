@@ -105,7 +105,7 @@ static void InitMessage(const std::string &message)
  */
 static std::string Translate(const char* psz)
 {
-    return QCoreApplication::translate("Noir Core", psz).toStdString();
+    return QCoreApplication::translate("Zoin Core", psz).toStdString();
 }
 
 static QString GetLangTerritory()
