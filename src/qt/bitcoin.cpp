@@ -685,7 +685,7 @@ int main(int argc, char *argv[])
     /// 7a. parse znode.conf
     std::string strErr;
     if(!noirnodeConfig.read(strErr)) {
-        QMessageBox::critical(0, QObject::tr("Noir Core"),
+        QMessageBox::critical(0, QObject::tr("Zoin Core"),
                               QObject::tr("Error reading noirnode configuration file: %1").arg(strErr.c_str()));
         return EXIT_FAILURE;
     }
