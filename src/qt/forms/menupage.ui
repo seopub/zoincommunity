@@ -1085,7 +1085,7 @@ text-align:center;
 </string>
         </property>
         <property name="text">
-         <string> Learn more about Noir</string>
+         <string> Learn more about Zoin</string>
         </property>
         <property name="icon">
          <iconset resource="../bitcoin.qrc">
