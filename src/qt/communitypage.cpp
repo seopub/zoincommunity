@@ -43,11 +43,11 @@ CommunityPage::~CommunityPage()
 
 
 void CommunityPage::OpenWebsite(){
-    QString website = "https://www.noirofficial.org/";
+    QString website = "https://zoincommunity.com/";
     QDesktopServices::openUrl(QUrl(website));
 }
 void CommunityPage::OpenReddit(){
-    QString reddit = "https://www.reddit.com/r/noirofficial/";
+    QString reddit = "https://www.reddit.com/r/zoincommunity/";
     QDesktopServices::openUrl(QUrl(reddit));
 }
 void CommunityPage::OpenBTCTalk(){
@@ -55,23 +55,23 @@ void CommunityPage::OpenBTCTalk(){
     QDesktopServices::openUrl(QUrl(btc));
 }
 void CommunityPage::OpenTwitter(){
-    QString twitter = "https://twitter.com/noircoin";
+    QString twitter = "https://twitter.com/zoincommunity";
     QDesktopServices::openUrl(QUrl(twitter));
 }
 void CommunityPage::OpenSlack(){
-    QString slack = "https://discord.gg/J3qquSz";
+    QString slack = "https://discord.gg/CmYb67ZKXC";
     QDesktopServices::openUrl(QUrl(slack));
 }
 void CommunityPage::OpenFacebook(){
-    QString fb = "https://www.facebook.com/Noirofficialorg-277345666225419/";
+    QString fb = "https://www.facebook.com/zoincommunity/";
     QDesktopServices::openUrl(QUrl(fb));
 }
 void CommunityPage::OpenSlackInv(){
-    QString slackInv = "https://t.me/noirofficial";
+    QString slackInv = "https://t.me/zoincommunity";
     QDesktopServices::openUrl(QUrl(slackInv));
 }
 void CommunityPage::OpenGit(){
-    QString git = "https://github.com/noirofficial/noir";
+    QString git = "https://github.com/seopub/zoincommunity/";
     QDesktopServices::openUrl(QUrl(git));
 }
 
