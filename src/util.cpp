@@ -104,8 +104,8 @@ bool fLiteMode = false;
 int nWalletBackups = 10;
 
 
-const char * const BITCOIN_CONF_FILENAME = "noir.conf";
-const char * const BITCOIN_PID_FILENAME = "noird.pid";
+const char * const BITCOIN_CONF_FILENAME = "zoin.conf";
+const char * const BITCOIN_PID_FILENAME = "zoind.pid";
 
 map<string, string> mapArgs;
 map<string, vector<string> > mapMultiArgs;
