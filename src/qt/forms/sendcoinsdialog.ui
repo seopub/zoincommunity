@@ -256,7 +256,7 @@ color: white;</string>
           <string notr="true">color: rgb(126, 126, 126);</string>
          </property>
          <property name="text">
-          <string>Send Noir</string>
+          <string>Send Zoin</string>
          </property>
         </widget>
        </item>
@@ -787,7 +787,7 @@ height:35px;
 width:105px;</string>
              </property>
              <property name="text">
-              <string>Send Noir</string>
+              <string>Send Zoin</string>
              </property>
              <property name="checkable">
               <bool>true</bool>
