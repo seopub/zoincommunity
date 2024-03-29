@@ -156,7 +156,7 @@ void QRCodeDialog::genCodePub()
 
 QString QRCodeDialog::getURIPub()
 {
-    QString ret = QString("noir:%1").arg(address);
+    QString ret = QString("zoin:%1").arg(address);
     int paramCount = 0;
 
     outUri_pub->clear();
@@ -210,7 +210,7 @@ void QRCodeDialog::genCodePriv()
 
 QString QRCodeDialog::getURIPriv()
 {
-    QString ret = QString("noir:%1").arg(priv);
+    QString ret = QString("zoin:%1").arg(priv);
     int paramCount = 0;
 
     outUri_priv->clear();
