@@ -454,7 +454,7 @@ background-color: rgba(255, 255, 255,0);</string>
            <string notr="true">color: #404040;</string>
           </property>
           <property name="text">
-           <string>Noir is a decentralized digital currency focused on providing secure and untraceable transactions.</string>
+           <string>Zoin is a decentralized digital currency focused on providing secure and untraceable transactions.</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -479,7 +479,7 @@ background-color: rgba(255, 255, 255,0);</string>
            <string notr="true">color: #404040;</string>
           </property>
           <property name="text">
-           <string>Based on the Sigma protocol, Noir offers you complete anonymity.</string>
+           <string>Based on the Sigma protocol, Zoin offers you complete anonymity.</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -506,7 +506,7 @@ background-color: rgba(255, 255, 255,0);</string>
            <string notr="true">color: #404040;</string>
           </property>
           <property name="text">
-           <string>You are your own bank. Noir protects your privacy along with your funds.</string>
+           <string>You are your own bank. Zoin protects your privacy along with your funds.</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
