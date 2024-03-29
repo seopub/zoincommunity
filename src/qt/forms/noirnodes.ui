@@ -427,7 +427,7 @@ border:0;
 background-color: rgba(255, 255, 255,0);</string>
               </property>
               <property name="text">
-               <string>Noirnode</string>
+               <string>Zoinnode</string>
               </property>
               <property name="indent">
                <number>0</number>
@@ -846,7 +846,7 @@ border-style:solid;</string>
                   <string notr="true">color: rgb(90, 90, 90);</string>
                  </property>
                  <property name="text">
-                  <string>Status of your Noirnodes in local wallet can potentially be slightly incorrect.</string>
+                  <string>Status of your Zoinnodes in local wallet can potentially be slightly incorrect.</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
@@ -923,7 +923,7 @@ border-style:solid;</string>
                <string notr="true">color: rgb(126, 126, 126);</string>
               </property>
               <property name="text">
-               <string>My Noirnodes</string>
+               <string>My Zoinnodes</string>
               </property>
              </widget>
             </item>
@@ -1098,7 +1098,7 @@ height:0;
                  </font>
                 </property>
                 <attribute name="title">
-                 <string>My Noirnodes</string>
+                 <string>My Zoinnodes</string>
                 </attribute>
                 <layout class="QGridLayout" name="gridLayout_7">
                  <property name="leftMargin">
@@ -1521,7 +1521,7 @@ border: 0;
                  </font>
                 </property>
                 <attribute name="title">
-                 <string>All Noirnodes</string>
+                 <string>All Zoinnodes</string>
                 </attribute>
                 <layout class="QGridLayout" name="gridLayout_8">
                  <property name="leftMargin">
@@ -1770,7 +1770,7 @@ border:0
 }</string>
               </property>
               <property name="text">
-               <string>All Noirnodes</string>
+               <string>All Zoinnodes</string>
               </property>
               <property name="icon">
                <iconset resource="../bitcoin.qrc">
