@@ -155,15 +155,15 @@ SendCoinsDialog::SendCoinsDialog(const PlatformStyle *platformStyle, QWidget *pa
     
     QString usdValue = ui->priceUSD->text().mid(1,  ui->priceUSD->text().length());
     if(settings.value("Currency").toInt() == 0){
-        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " NOR (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " $)");
+        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " ZOI (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " $)");
     } else if(settings.value("Currency").toInt() == 1){
-        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " NOR (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " €)");
+        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " ZOI (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " €)");
     } else if(settings.value("Currency").toInt() == 2){
-        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " NOR (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " £)");
+        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " ZOI (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " £)");
     } else if(settings.value("Currency").toInt() == 3){
-        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " NOR (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " Ł)");
+        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " ZOI (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " Ł)");
     } else if(settings.value("Currency").toInt() == 4){
-        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " NOR (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " ¥)");
+        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " ZOI (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " ¥)");
     }
 
 
@@ -183,15 +183,15 @@ void SendCoinsDialog::txtChanged(){
     QString usdValue = ui->priceUSD->text().mid(1,  ui->priceUSD->text().length());
     QSettings configs;
     if(configs.value("Currency").toInt() == 0){
-        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " NOR (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " $)");
+        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " ZOI (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " $)");
     } else if(configs.value("Currency").toInt() == 1){
-        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " NOR (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " €)");
+        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " ZOI (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " €)");
     } else if(configs.value("Currency").toInt() == 2){
-        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " NOR (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " £)");
+        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " ZOI (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " £)");
     } else if(configs.value("Currency").toInt() == 3){
-        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " NOR (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " Ł)");
+        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " ZOI (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " Ł)");
     } else if(configs.value("Currency").toInt() == 4){
-        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " NOR (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " ¥)");
+        ui->sendAmount->setText("Sending: " + ui->PayAmount->text() + " ZOI (" + QString::number(ui->PayAmount->value() * usdValue.toDouble()) + " ¥)");
     }
 }
 
