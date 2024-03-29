@@ -556,8 +556,8 @@ std::string HelpMessage(HelpMessageMode mode) {
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/noirofficial/noir>";
-    const std::string URL_WEBSITE = "<https://noirofficial.org>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/seopub/zoincommunity/>";
+    const std::string URL_WEBSITE = "<https://zoincommunity.com>";
     // todo: remove urls from translations on next change
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2009, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
