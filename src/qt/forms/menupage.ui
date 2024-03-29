@@ -827,7 +827,7 @@ text-align:left;
 QPushButton:hover{ background-color: rgb(243, 243, 243); }</string>
      </property>
      <property name="text">
-      <string>Noirnode</string>
+      <string>Zoinnode</string>
      </property>
      <property name="icon">
       <iconset resource="../bitcoin.qrc">
