@@ -1526,7 +1526,7 @@ border-style:solid;</string>
                   <string notr="true">color: rgb(110, 110, 110);</string>
                  </property>
                  <property name="text">
-                  <string>You can perform spend Sigma to redeem Noir back from Sigma.</string>
+                  <string>You can perform spend Sigma to redeem Zoin back from Sigma.</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
