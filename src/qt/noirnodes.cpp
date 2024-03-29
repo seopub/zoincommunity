@@ -95,8 +95,8 @@ Noirnodes::Noirnodes(const PlatformStyle *platformStyle, QWidget *parent) :
     ui->autoupdate_label_4->setVisible(true);
     ui->secondsLabel_4->setVisible(true);
     ui->label->setVisible(true);
-    ui->tabLabel->setText("My Noirnodes ");
-    ui->swapButton->setText("All Noirnodes ");
+    ui->tabLabel->setText("My Zoinnodes ");
+    ui->swapButton->setText("All Zoinnodes ");
     ui->label_count_4->setText("My Node Count: ");
     ui->countLabel_4->setText(QString::number(ui->tableWidgetMyNoirnodes_4->rowCount()));
     ui->tabWidget->setCurrentIndex(0);
@@ -478,8 +478,8 @@ void Noirnodes::on_swapButton_clicked()
         ui->autoupdate_label_4->setVisible(false);
         ui->secondsLabel_4->setVisible(false);
         ui->label->setVisible(false);
-        ui->tabLabel->setText("All Noirnodes ");
-        ui->swapButton->setText("My Noirnodes ");
+        ui->tabLabel->setText("All Zoinnodes ");
+        ui->swapButton->setText("My Zoinnodes ");
         ui->label_count_4->setText("Total Node Count: ");
         ui->countLabel_4->setText(QString::number(ui->tableWidgetNoirnodes_4->rowCount()));
         ui->tabWidget->setCurrentIndex(1);
@@ -489,8 +489,8 @@ void Noirnodes::on_swapButton_clicked()
         ui->autoupdate_label_4->setVisible(true);
         ui->secondsLabel_4->setVisible(true);
         ui->label->setVisible(true);
-        ui->tabLabel->setText("My Noirnodes ");
-        ui->swapButton->setText("All Noirnodes ");
+        ui->tabLabel->setText("My Zoinnodes ");
+        ui->swapButton->setText("All Zoinnodes ");
         ui->label_count_4->setText("My Node Count: ");
         ui->countLabel_4->setText(QString::number(ui->tableWidgetMyNoirnodes_4->rowCount()));
         ui->tabWidget->setCurrentIndex(0);
