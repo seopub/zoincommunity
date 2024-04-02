@@ -1210,6 +1210,17 @@ void static ZcoinMiner(const CChainParams &chainparams) {
             //
             unsigned int nTransactionsUpdatedLast = mempool.GetTransactionsUpdated();
             CBlockIndex *pindexPrev = chainActive.Tip();
+
+            if(pindexPrev->nHeight > 1)
+            {
+                if(GetAdjustedTime() - pindexPrev->GetBlockTime() < 60 )
+                {
+                    LogPrintf("CreateNewBlock to early height %d time tip %s prev %s\n" , pindexPrev->nHeight, pindexPrev->GetBlockTime(),  GetAdjustedTime());
+                    MilliSleep(10000);
+                    continue;
+                }
+            }
+            
             if (pindexPrev) {
                 LogPrintf("loop pindexPrev->nHeight=%s", pindexPrev->nHeight);
             }
