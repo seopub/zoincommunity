@@ -4741,11 +4741,38 @@ bool SignBlock(CWallet& wallet, int64_t& nFees, CBlockTemplate *pblocktemplate)
 
 static bool AcceptBlockHeader(const CBlockHeader &block, CValidationState &state, const CChainParams &chainparams,
                               CBlockIndex **ppindex = NULL, bool fProofOfStake=true) {
-    AssertLockHeld(cs_main);
-    // Check for duplicate
-    uint256 hash = block.GetHash();
-    BlockMap::iterator miSelf = mapBlockIndex.find(hash);
-    CBlockIndex *pindex = NULL;
+	AssertLockHeld(cs_main);
+	// Check for duplicate
+	uint256 hash = block.GetHash();
+	BlockMap::iterator miSelf = mapBlockIndex.find(hash);
+	CBlockIndex *pindex = NULL;
+
+	if (hash != chainparams.GetConsensus().hashGenesisBlock)
+	{
+		BlockMap::iterator head = mapBlockIndex.find(hash);
+		if ( head != mapBlockIndex.end())
+		{
+		
+			CBlockIndex *tip =  head->second;
+			if(tip->nHeight > 1)
+			{
+		
+				head = mapBlockIndex.find(block.hashPrevBlock);
+				CBlockIndex *prev = head->second;
+				if(tip->nHeight > 1 && tip->GetBlockTime() - prev->GetBlockTime() < 60 )
+				{
+		
+					pindex = miSelf->second;
+					if (ppindex) *ppindex = pindex;
+		
+					LogPrintf("AcceptBlockHeader block mined to early height %d time tip %s prev %s\n" , tip->nHeight, tip->GetBlockTime(),  prev->GetBlockTime());
+					return  error("AcceptBlockHeader block mined to early height %d time tip %s prev %s\n" , tip->nHeight, tip->GetBlockTime(),  prev->GetBlockTime());
+				}
+			}
+		}
+	}
+	
+	
     if (hash != chainparams.GetConsensus().hashGenesisBlock) {
 
         if (miSelf != mapBlockIndex.end()) {
