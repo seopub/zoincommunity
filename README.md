@@ -1,23 +1,23 @@
-Noir
+Zoin
 =============================
 
-What is Noir?
+What is Zoin?
 -------------
 
-Noir is the implementation of the Sigma Protocol guaranteeing true financial anonymity.
+Zoin is the implementation of the Sigma Protocol guaranteeing true financial anonymity.
 
  - 2.5 minute block target
  - No hardcap
  - 2.2 coins per block as subsidy
 
 For more information, as well as an immediately useable, binary version of
-the noir client sofware, see https://github.com/noirofficial/noir/releases.
+the zoin client sofware, see https://github.com/seopub/zoincommunity/releases.
 
 
 License
 -------
 
-Noir is released under the terms of the MIT license. See `COPYING` for more
+Zoin is released under the terms of the MIT license. See `COPYING` for more
 information or see http://opensource.org/licenses/MIT.
 
 
@@ -27,7 +27,7 @@ Development process
 Developers work in their own trees, then submit pull requests when they think
 their feature or bug fix is ready.
 
-If it is a simple/trivial/non-controversial change, then one of the Noir
+If it is a simple/trivial/non-controversial change, then one of the Zoin
 development team members simply pulls it.
 
 If it is a *more complicated or potentially controversial* change, then the patch
@@ -40,8 +40,8 @@ match the project's coding conventions (see `doc/coding.txt`) or are
 controversial.
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/noirofficial/noir/tags) are created
-regularly to indicate new official, stable release versions of Noir.
+completely stable. [Tags](https://github.com/seopub/zoincommunity/tags) are created
+regularly to indicate new official, stable release versions of Zoin.
 
 
 
@@ -74,11 +74,11 @@ Build
 ----------------------
 1.  Clone the source:
 
-        git clone https://github.com/noirofficial/noir
+        git clone https://github.com/seopub/zoincommunity
 
-2.  Build Noir-core:
+2.  Build Zoin-core:
 
-    Configure and build the headless noir binaries as well as the GUI (if Qt is found).
+    Configure and build the headless zoin binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
         
@@ -93,18 +93,18 @@ Build
 
 Mac OS X Build Instructions and Notes
 =====================================
-See [doc/build-osx.md](https://github.com/noirofficial/noir/blob/master/doc/build-osx.md) for instructions on building on Mac OS X.
+See [doc/build-osx.md](https://github.com/seopub/zoincommunity/blob/master/doc/build-osx.md) for instructions on building on Mac OS X.
 
 
 
 Windows (64/32 bit) Build Instructions and Notes
 =====================================
-See [doc/build-windows.md](https://github.com/noirofficial/noir/blob/master/doc/build-windows.md) for instructions on building on Windows 64/32 bit.
+See [doc/build-windows.md](https://github.com/seopub/zoincommunity/blob/master/doc/build-windows.md) for instructions on building on Windows 64/32 bit.
 
 
 Copyright
 ---------
 
-Copyright (c) 2016-2019 Noir Developers
+Copyright (c) 2016-2019 Zoin Developers
 Copyright (c) 2016 Zcoin Developers
 Copyright (c) 2013-2015 Bitcoin Developers
