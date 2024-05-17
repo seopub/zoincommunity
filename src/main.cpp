@@ -145,7 +145,7 @@ static void CheckBlockIndex(const Consensus::Params& consensusParams);
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Noir Signed Message:\n";
+const string strMessageMagic = "Zoincoin Signed Message:\n";
 
 // Internal stuff
 namespace {
